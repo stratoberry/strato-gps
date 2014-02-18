@@ -4,7 +4,7 @@ GPS service used by the actual payload.
 
 To install:
 
-    go install github.com/stratoberry/strato-gps
+    go get github.com/stratoberry/strato-gps
 
 And run:
 
