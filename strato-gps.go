@@ -13,7 +13,7 @@ import (
 var outFile = flag.String("output", "/data/gps.csv", "output filename")
 var udpPort = flag.Int64("udp", 4773, "UDP port for sending data")
 
-var updateFreq = flag.Int("freq", 10, "update frequency in seconds")
+var updateFreq = flag.Int64("freq", 10, "update frequency in seconds")
 
 // Feb 1st 2014
 const EPOCH = 1391212800
