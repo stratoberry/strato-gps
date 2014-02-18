@@ -1,0 +1,14 @@
+[Unit]
+Description=StratoberryPi GPS Monitor
+After=network.service
+
+[Service]
+Type=simple
+WorkingDirectory=/data
+ExecStart=/root/go/bin/strato-gps -q
+TimeoutSec=120
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
